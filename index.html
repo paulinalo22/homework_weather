@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image" href="Assets/logo.png">
+
+    <title>What's the weather?</title>
+</head>   
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="Assets/dwight.png" width="40" height="42" class="d-inline-block align-top" alt="Dwight">
+        Fact: This is the weather.
+        </a>
+    </nav>
+
+    <!-- This is where you search for the city -->
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-3 searchColumn">
+                <form>
+                    <h4>Search for a City:</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+                        <div class="input-group-append">
+                        <!-- This button will hopefully search-->
+                        <button type="submit" id="submitCity" class="btn btn-primary fa fa-search"></button>
+                        <!-- This button will hopefully clear -->
+                        <button id ="clear" class="btn btn-danger fa fa-trash"></button>
+                    </div>
+                </div>
+            </form>
+
+    <!-- This is where previous searches will be allocated -->
+    <div id="previousSearch" class="btn-group-vertical">
+    </div>
+    </div>
+    
+    <!-- Here is the place in which the current weather of the city will be displayed -->
+    <div class="col-md-9">
+        <div class="container" id="currentWeather">
+            <h2>Current Weather Here</h2>
+        </div>
+    <div>
+    
+    <!-- This is where the future will be! AKA 5 day forecast -->
+    <h3>5-Day Forecast:</h3>
+        <div class="row" id="weatherForecast">
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+</body>
+</html>
