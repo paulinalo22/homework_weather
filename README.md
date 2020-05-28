@@ -4,3 +4,5 @@ This cool application will allow you to search the current weather in different 
 The UV index changes color depending on the severity of it. 
 
 One cool feature is that the user's search history is saved to the local storage and the user can access to it for future use. 
+
+ https://paulinalo22.github.io/homework_weather/
